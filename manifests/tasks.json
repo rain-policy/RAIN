@@ -1,0 +1,210 @@
+{
+  "pickcube": {
+    "seed_start": 40000,
+    "max_episode_steps": 160,
+    "episodes": 100,
+    "success_once_count": 100,
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "files": {
+      "uact": "models/pickcube/uact.pt",
+      "flow": "models/pickcube/flow.pt",
+      "heads": "models/pickcube/heads.pt",
+      "route": "models/pickcube/route.json"
+    },
+    "hashes": {
+      "uact": "e7f7fe67e9eaaebffc57b6ebbbeba85489c7227b6a336f22cb3183ed3215dad0",
+      "flow": "6e2ff963c9eb043fbde1c1cac2d6a2661eb98eaf14a8f927dcfd54cc64a9bbcf",
+      "heads": "5166040a1355d0df5488edf98ed112178a0c0d5a78773c96c8b16251b249b984",
+      "route": "c42df9075bc3a15902b8c54241bc110859e98c1352f1f11018287af409c4de21"
+    },
+    "source_hashes": {
+      "uact": "2511ab6f0a3baa849e37553c86d1d00af7e89411752120900b739f56aed3f360",
+      "flow": "cf949e7b57cbb38f5e189979fe9d4f076bc078e76a24cbe13883fc79fda3366d",
+      "heads": "73c286921218787042ebda5b8ed66c47ae58887bd10977bd14752fe293031422",
+      "route": "fda13627a4eeac359640d66c3ceb0211fe75d0e4b98c5a71de7e339337a57d38"
+    }
+  },
+  "pushcube": {
+    "seed_start": 41000,
+    "max_episode_steps": 140,
+    "episodes": 100,
+    "success_once_count": 96,
+    "env_id": "PushCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "files": {
+      "uact": "models/pushcube/uact.pt",
+      "flow": "models/pushcube/flow.pt",
+      "heads": "models/pushcube/heads.pt",
+      "route": "models/pushcube/route.json"
+    },
+    "hashes": {
+      "uact": "b6b44322f2978f1643fe290b696ff259439475615e7d8ea632307caf74e12f23",
+      "flow": "156810f8e99dc19ff1ff2bcc1d15fb18d9a10d69b3a0a2a91fe31bd89b74ccc6",
+      "heads": "f9fc69ef8e894d458c2a733a8802d530645be1ab3c703fc2eb398641c4a5ebad",
+      "route": "0ec68f0e93b87207120f3be662c2df2ddd092b22a167f461b95d333f9c936df6"
+    },
+    "source_hashes": {
+      "uact": "a1e5e7ed9a831c2b920ff9b59d6da37d16c6c9e570fab11d1efa94575fd339f5",
+      "flow": "4f42626839471bf79ce3faa555865f7eb48ebbbfff2e3805455bac866b9913d4",
+      "heads": "c481856681024566660f616ba31a2c97f5bdb0e9b784c8d2ebe30c4c7bb81818",
+      "route": "b20bb8bee348dcc7fdb05af1b872e80afcb2884e4f87f72d11e41e211ec15578"
+    }
+  },
+  "stackcube": {
+    "seed_start": 42000,
+    "max_episode_steps": 240,
+    "episodes": 100,
+    "success_once_count": 91,
+    "env_id": "StackCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "files": {
+      "uact": "models/stackcube/uact.pt",
+      "flow": "models/stackcube/flow.pt",
+      "heads": "models/stackcube/heads.pt",
+      "route": "models/stackcube/route.json"
+    },
+    "hashes": {
+      "uact": "7a45ce1bd6ee0d1d98dba2f4936893f56f212b318306219442ec88c6091176a4",
+      "flow": "5ceb48e699362483f69a2111161639c42f3bc8ec70c8a1f52e0538f156a8731b",
+      "heads": "005378a2b4d72ebb383871b7bf6471db2006d096002928afc6ec3a30ef9664c1",
+      "route": "dca2c9b5ecc8e225c955ffdca70268fa5fe49971bba2f7cf92ee95651bb8748d"
+    },
+    "source_hashes": {
+      "uact": "cdccd172a6745e6f6154e70dd66d151dcde75e34784e5f35d6eab5b7d8f3422f",
+      "flow": "ba45a00442f23aaed6a0f97e433724978f2c6423ecb9e0628b63d6befe490bf2",
+      "heads": "33e3746625c6bc90c4b142850219989d95d5abcc4804ba3abb344b941cffce7a",
+      "route": "b0354bb202aa92796aa5b979409402aea07df71696ec8c0ef5c62a15cd8cb3f1"
+    }
+  },
+  "peginsertionside": {
+    "seed_start": 43000,
+    "max_episode_steps": 320,
+    "episodes": 100,
+    "success_once_count": 59,
+    "env_id": "PegInsertionSide-v1",
+    "control_mode": "pd_ee_delta_pose",
+    "files": {
+      "uact": "models/peginsertionside/uact.pt",
+      "flow": "models/peginsertionside/flow.pt",
+      "heads": "models/peginsertionside/heads.pt",
+      "route": "models/peginsertionside/route.json"
+    },
+    "hashes": {
+      "uact": "f5302ba9b8b2d39514f6c92e538f0a20669b3d1c5d056806e99d99150f57a314",
+      "flow": "8119dc9280206a90e3d7a8337455c03f1c909310395d7ed3c3ad7e055f07a8ea",
+      "heads": "f63e86ccca38e046844ce035bf462e53fb46947c556e72494e615163621f998e",
+      "route": "dc140acce9e609425d6aecf6c005720960b46739f865ba1dbf6d99c562d34085"
+    },
+    "source_hashes": {
+      "uact": "5775ffd6f7b0140aa973d693a18d627255794a3cebe922325548034c4159eba8",
+      "flow": "f58f9167c0b320c4bd0f9e449ae6491a287ef12c81a7408b0404ff8941574834",
+      "heads": "fdf36c712ac35c8cc5e4136bc3d3e3cc1445885797306b5e0a581168133461da",
+      "route": "c059c6b969b89248e3f55f4b4cdfe23a9ec65f4b09131069fc9865997999cbed"
+    }
+  },
+  "plugcharger": {
+    "seed_start": 44000,
+    "max_episode_steps": 1000,
+    "episodes": 100,
+    "success_once_count": 11,
+    "env_id": "PlugCharger-v1",
+    "control_mode": "pd_ee_delta_pose",
+    "files": {
+      "uact": "models/plugcharger/uact.pt",
+      "flow": "models/plugcharger/flow.pt",
+      "heads": "models/plugcharger/heads.pt",
+      "route": "models/plugcharger/route.json"
+    },
+    "hashes": {
+      "uact": "81c93fcee844a5cf0a49028fbd34d70a08fc350bf0042ce246e2688e7a8e588f",
+      "flow": "a4e34040173a59d2fb65b45ab6b824a8a4ab1793ce3ec00f8e837affd3ea0a5a",
+      "heads": "02b3c4bad52a978cee7e34adf2c32bf1fbda9a768ebf8f35f00806b6dec04765",
+      "route": "9801fc7fd943c04253a1fc068b6561e31217f14e34f06a6b30e9eaa80c744fb3"
+    },
+    "source_hashes": {
+      "uact": "e5ffd3ca1867574654b624ec11ea68380d39055125178c4d332d6cd402011494",
+      "flow": "bf9f6fc19affd9ec0d5830e7b62e37b04e879baafdada425f049c0897645b824",
+      "heads": "990080d870bcd077532ca983710cfbdd2eb782197fef8c0df1f0c55f1705bba1",
+      "route": "74bf11d549093169b4a1fd53c1f5b4353dbd7300aff7b044a32541e7fe4bb908"
+    }
+  },
+  "pullcubetool": {
+    "seed_start": 45000,
+    "max_episode_steps": 520,
+    "episodes": 100,
+    "success_once_count": 89,
+    "env_id": "PullCubeTool-v1",
+    "control_mode": "pd_ee_delta_pose",
+    "files": {
+      "uact": "models/pullcubetool/uact.pt",
+      "flow": "models/pullcubetool/flow.pt",
+      "heads": "models/pullcubetool/heads.pt",
+      "route": "models/pullcubetool/route.json"
+    },
+    "hashes": {
+      "uact": "e9470f35220b1042e6b05994d6cd89109b7b4162fcaae58c14de3db8dde5af0e",
+      "flow": "0d61812ff5a000aff1b826834316e98dc5dbf513f00e48e3623f97c9ef8bd9c5",
+      "heads": "17e3eecaf9776512f7981d19d36cf122aa647a77b46bc9f2effa35792f75dab4",
+      "route": "4b2561eccad76c0902192bb458e615a6876dc395af13690fae2345a51d536744"
+    },
+    "source_hashes": {
+      "uact": "0e5b2eb7c938d79081925a4d6965bfeaac4b01470d7d3c4ac6537bc03e946ced",
+      "flow": "2f60d991f0ac5fa320444f8709588359428207099938fe3f60caabe95416501b",
+      "heads": "1d17bcba430951db2bfd80cc708639cbffc7365a7ce24a21810fb7e7f8fddb87",
+      "route": "7a4ff0d4f04b63f94a4d5e85389da8ddc0d74252708cf852d38020a108cdfed2"
+    }
+  },
+  "pusht": {
+    "seed_start": 46000,
+    "max_episode_steps": 200,
+    "episodes": 100,
+    "success_once_count": 24,
+    "env_id": "PushT-v1",
+    "control_mode": "pd_ee_delta_pose",
+    "files": {
+      "uact": "models/pusht/uact.pt",
+      "flow": "models/pusht/flow.pt",
+      "heads": "models/pusht/heads.pt",
+      "route": "models/pusht/route.json"
+    },
+    "hashes": {
+      "uact": "b363c2d2e3b9dd231120b7ee2c613e3015b2c5dac7e0ba114a63a47339a723ff",
+      "flow": "d34bcbbec246f9cf689e9ccea7c1c2768660d6f9b0ef5ffc6a2d56a4834ca267",
+      "heads": "22f7276cbfcac6f5e172388bbf1332da308e380d11822743a5cd9d0d181892bc",
+      "route": "88ce8e942626d3770b1b57aeaf1120a989338a1d8f42a038fc75de8cc3912454"
+    },
+    "source_hashes": {
+      "uact": "0f40e9f5116673124278ac3abd64024f7704968747a1423c75fec0673ef63ff8",
+      "flow": "4a070751a43fc0b986a4dff00fb85e0e44b3c4c2f537f1ed7bc86a879b4c78b7",
+      "heads": "e582592be450a9a2780130997fe69d4e1f8426cfd6b26418decfb458483c1191",
+      "route": "0463970137f5f2d6250add11a3d4995280dfbd1642668a86ec3829dba5ab54d6"
+    }
+  },
+  "stackpyramid": {
+    "seed_start": 47000,
+    "max_episode_steps": 400,
+    "episodes": 100,
+    "success_once_count": 63,
+    "env_id": "StackPyramid-v1",
+    "control_mode": "pd_ee_delta_pose",
+    "files": {
+      "uact": "models/stackpyramid/uact.pt",
+      "flow": "models/stackpyramid/flow.pt",
+      "heads": "models/stackpyramid/heads.pt",
+      "route": "models/stackpyramid/route.json"
+    },
+    "hashes": {
+      "uact": "3e3641878faa9c000e0e67fe2135f1e8ad5a7598713e3db3d619494da47492fe",
+      "flow": "08b431a932b33847b0480abb8b4082180329c2bb21612a41a92f507491a8f41d",
+      "heads": "52553d133af656623dd469d00ac643f10f07daf4f7eff4b3aaf8f2207058a888",
+      "route": "4d644aa53f70768acc3cb8815abb4727051b4dba6fd1608e364d15e8be6bd8d8"
+    },
+    "source_hashes": {
+      "uact": "fdd4f0c2e0cd6616b5c3d620984f1944c57f83883d94658f2621bd9683ae4105",
+      "flow": "2128218d808b4f051a77b1cf5b4cce2156c3db8146b3a736a9147ab8e8705526",
+      "heads": "76eb5f6c9f1ead2681dc2779f98c305abba1246f0ead51da31fc9f3bf9f4e9e5",
+      "route": "70692c10355e6713f0fcbcb176ba7d20a7b2a3d3f449412ad8d077ac662fd0ea"
+    }
+  }
+}

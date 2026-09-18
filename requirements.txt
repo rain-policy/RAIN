@@ -1,0 +1,8 @@
+numpy==2.2.6
+gymnasium==1.3.0
+sapien==3.0.3
+h5py==3.16.0
+scipy==1.15.3
+diffusers==0.35.2
+tensorboard==2.21.0
+mani_skill @ git+https://github.com/haosulab/ManiSkill.git@fb3328d3b4e29fad8753e2c26a713320be786fd8
