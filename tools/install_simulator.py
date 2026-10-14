@@ -11,6 +11,8 @@ import subprocess
 import sys
 import tarfile
 import tempfile
+from urllib.parse import quote
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -54,13 +56,15 @@ def main() -> None:
         stage = Path(temporary)
         archive = args.archive
         if archive is None:
-            if shutil.which("gh") is None:
-                parser.error("Install GitHub CLI and authenticate, or pass --archive")
-            subprocess.run([
-                "gh", "release", "download", manifest["tag"], "--repo", manifest["repository"],
-                "--pattern", manifest["asset"], "--dir", str(stage),
-            ], check=True)
             archive = stage / manifest["asset"]
+            url = (
+                f"https://github.com/{manifest['repository']}/releases/download/"
+                f"{quote(manifest['tag'], safe='')}/{quote(manifest['asset'], safe='')}"
+            )
+            print(f"Downloading {manifest['asset']}...", flush=True)
+            request = Request(url, headers={"User-Agent": "RAIN-simulator-installer"})
+            with urlopen(request, timeout=120) as input_file, archive.open("wb") as output:
+                shutil.copyfileobj(input_file, output)
         if archive.stat().st_size != manifest["bytes"] or digest(archive) != manifest["sha256"]:
             raise ValueError("Simulator archive checksum or size mismatch")
         source = stage / "source"

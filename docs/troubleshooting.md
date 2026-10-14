@@ -2,9 +2,10 @@
 
 ## Model access or download fails
 
-The current release is private. Check `gh auth status` and that the signed-in
-account can access `rain-policy/RAIN`. Alternatively install a downloaded
-archive using `--archive`; see [models](models.md).
+The release is public and requires no login. Check that your network can reach
+GitHub and its release download service. You can also download the archive from
+the [release page](https://github.com/rain-policy/RAIN/releases/tag/v0.1.0) and
+install it using `--archive`; see [models](models.md).
 
 ## Missing model or checksum mismatch
 

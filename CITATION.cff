@@ -22,8 +22,8 @@ authors:
     given-names: Gen
   - family-names: Ding
     given-names: Fangqiang
-version: 0.1.0
-date-released: 2026-09-18
+version: 0.1.1
+date-released: 2026-10-14
 url: "https://rain-policy.github.io/"
 repository-code: "https://github.com/rain-policy/RAIN"
 keywords:

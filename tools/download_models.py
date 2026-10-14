@@ -1,4 +1,4 @@
-"""Download and verify the private RAIN release using your GitHub CLI login."""
+"""Download and verify the public RAIN pretrained models."""
 
 from __future__ import annotations
 import argparse
@@ -6,10 +6,11 @@ import json
 import os
 from pathlib import Path
 import shutil
-import subprocess
 import sys
 import tarfile
 import tempfile
+from urllib.parse import quote
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -72,27 +73,16 @@ def main():
     with tempfile.TemporaryDirectory(prefix="rain-download-") as temp:
         archive = args.archive
         if archive is None:
-            if shutil.which("gh") is None:
-                parser.error(
-                    "Install GitHub CLI and run gh auth login, or pass --archive"
-                )
-            subprocess.run(
-                [
-                    "gh",
-                    "release",
-                    "download",
-                    release["tag"],
-                    "--repo",
-                    release["repository"],
-                    "--pattern",
-                    release["asset"],
-                    "--dir",
-                    temp,
-                ],
-                check=True,
-            )
             archive = Path(temp) / release["asset"]
-        if digest(archive) != release["sha256"]:
+            url = (
+                f"https://github.com/{release['repository']}/releases/download/"
+                f"{quote(release['tag'], safe='')}/{quote(release['asset'], safe='')}"
+            )
+            print(f"Downloading {release['asset']}...", flush=True)
+            request = Request(url, headers={"User-Agent": "RAIN-model-downloader"})
+            with urlopen(request, timeout=120) as source, archive.open("wb") as dest:
+                shutil.copyfileobj(source, dest)
+        if archive.stat().st_size != release["bytes"] or digest(archive) != release["sha256"]:
             raise ValueError("Release archive checksum mismatch")
         install(archive, tasks, selected)
 

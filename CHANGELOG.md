@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased
+## v0.1.1 — 2026-10-14
+
+- Published the ManiSkill code, pretrained models and manuscript PDF.
+- Enabled model and simulator downloads without GitHub CLI or authentication.
+- Linked the manuscript PDF and project homepage.
+- Passed 21 CPU checks; original model and simulator archives are unchanged.
 
 - Adopted the MIT License for original RAIN code, documentation and the
   eight-task v0.1.0 model weights on 2026-10-14.
@@ -21,6 +26,5 @@
 - Removed private filesystem paths from model metadata while preserving tensors
   and numeric route settings.
 
-The v0.1.0 model artifact remains unchanged. The current release is private;
-public distribution is pending. Its original RAIN model weights use MIT,
-as selected on 2026-10-14.
+The v0.1.0 model artifact remains unchanged and is publicly downloadable.
+Its original RAIN model weights use MIT, as selected on 2026-10-14.

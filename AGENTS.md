@@ -1,6 +1,6 @@
 # RAIN repository maintenance
 
-This repository is the ManiSkill-only implementation of RAIN. Its private
+This repository is the ManiSkill-only implementation of RAIN. Its public
 remote is `https://github.com/rain-policy/RAIN`; its public project page is
 `https://rain-policy.github.io/`. The paper title is **Refine Actions If Needed:
 Adaptive Action Chunk Refinement for Robot Manipulation**.
@@ -20,7 +20,8 @@ Adaptive Action Chunk Refinement for Robot Manipulation**.
   entry points. Keep docs aligned with their actual options and outputs.
 - Keep arXiv and paper BibTeX marked pending until the confirmed public reference
   is supplied. `CITATION.cff` describes the software release, not a paper venue.
-- Keep the repository private until the user explicitly requests public release.
+- The user explicitly authorized public code, model and manuscript PDF release
+  on 2026-10-14. Keep release links aligned with public availability.
   The user selected MIT for original RAIN code, documentation and all eight-task
   v0.1.0 model weights on 2026-10-14. Preserve upstream dependency, simulator
   asset and dataset terms; do not apply the RAIN license to those materials.

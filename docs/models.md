@@ -2,14 +2,14 @@
 
 The [v0.1.0 release](https://github.com/rain-policy/RAIN/releases/tag/v0.1.0)
 contains `rain-models-v0.1.0.tar.gz`, a 566,963,392-byte archive for eight tasks.
-The repository and its release assets currently require private-repository access.
+The archive is publicly downloadable. The installer uses Python's standard
+library and does not require GitHub CLI or a GitHub login.
 
 ## Download and install
 
 From the repository root:
 
 ```bash
-gh auth login
 python tools/download_models.py --task pickcube
 python run.py --task pickcube --verify-only
 ```
@@ -60,7 +60,7 @@ export checks.
 The eight-task v0.1.0 RAIN model weights, including the proposal, refiner and
 error-ensemble checkpoints and associated route configuration, are released
 under the [MIT License](../LICENSE), as selected by the authors on 2026-10-14.
-The release remains private until public distribution is authorized.
+The model archive is publicly available; its original bytes and checksums are unchanged.
 
 Simulator source, simulator assets and demonstration datasets retain their
 upstream terms; see [third-party notices](../THIRD_PARTY_NOTICES.md).

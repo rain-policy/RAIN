@@ -18,5 +18,5 @@ in Git. The reference simulator is supplied as a separate, verified Release
 attachment, including its packaged simulation assets. The MIT license in
 `LICENSE` covers original RAIN code, documentation and the eight-task v0.1.0
 model weights. It does not replace upstream software, simulator asset or
-demonstration dataset terms. The repository and Release assets currently
-remain private.
+demonstration dataset terms. The separately distributed manuscript is not
+covered by the code and model MIT license.

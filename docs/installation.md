@@ -2,12 +2,10 @@
 
 ## Install the reference environment
 
-Use Linux, Python 3.10 and an NVIDIA GPU. From an account with access to this
-private repository:
+Use Linux, Python 3.10 and an NVIDIA GPU. Clone the public repository:
 
 ```bash
-gh auth login
-gh repo clone rain-policy/RAIN
+git clone https://github.com/rain-policy/RAIN.git
 cd RAIN
 python3.10 -m venv .venv
 source .venv/bin/activate

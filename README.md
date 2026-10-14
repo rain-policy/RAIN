@@ -8,7 +8,8 @@ Guangyan Chen · Yufeng Yue · Gen Li · Fangqiang Ding
 
 <p align="center">
 <a href="https://rain-policy.github.io/">Project page</a> ·
-arXiv: coming soon ·
+<a href="https://rain-policy.github.io/assets/paper/RAIN.pdf">Paper (PDF)</a> ·
+arXiv: awaiting announcement ·
 <a href="https://github.com/rain-policy/RAIN/releases/tag/v0.1.0">Pretrained models</a> ·
 <a href="docs/README.md">Documentation</a>
 </p>
@@ -44,8 +45,7 @@ and configure Vulkan following the [installation guide](docs/installation.md).
 Run all commands below from the repository root.
 
 ```bash
-# Access the current private model release through GitHub CLI.
-gh auth login
+# Download public models; no GitHub login is needed.
 python tools/download_models.py --task pickcube
 python run.py --task pickcube --verify-only
 
@@ -129,16 +129,17 @@ files and explains the module identifiers retained for checkpoint compatibility.
 ## Project and citation
 
 - **Project page:** [rain-policy.github.io](https://rain-policy.github.io/)
-- **Paper / arXiv:** the public preprint link and paper BibTeX will be added here
-  when available.
+- **Paper:** [Manuscript PDF](https://rain-policy.github.io/assets/paper/RAIN.pdf).
+- **arXiv:** submitted; the public preprint link and paper BibTeX will be added
+  after announcement.
 - **Software citation:** [CITATION.cff](CITATION.cff) records this repository's
   confirmed authors and software release metadata.
 - **Updates:** [Changelog](CHANGELOG.md)
 
-## Development and access
+## Development and license
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for local checks and issue reports.
 Original RAIN code, documentation and the eight-task v0.1.0 model weights use the
-[MIT License](LICENSE). The repository and model release currently remain
-private. Third-party software, simulator assets and demonstration datasets
+[MIT License](LICENSE). Code and model downloads are public and do not require
+a GitHub login. Third-party software, simulator assets and demonstration datasets
 retain their [upstream terms](THIRD_PARTY_NOTICES.md).
