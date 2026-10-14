@@ -1,0 +1,33 @@
+name: Bug report
+description: Report an installation, model-loading or runtime issue.
+title: "[Bug] "
+labels: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the expected behavior and the observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit, OS, Python, PyTorch/CUDA, GPU, ManiSkill version and renderer.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and task
+      description: Include the model release and a minimal command.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant traceback or result fields
+      description: Remove credentials and unrelated personal paths from logs.
+      render: text

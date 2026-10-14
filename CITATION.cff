@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "These metadata cite the RAIN software. The paper citation will be added when the public preprint is available."
+type: software
+title: "RAIN: Refine Actions If Needed — Adaptive Action Chunk Refinement for Robot Manipulation"
+authors:
+  - family-names: Liu
+    given-names: Hanlin
+  - family-names: Zhou
+    given-names: Zichen
+  - family-names: Zhang
+    given-names: Jiacheng
+  - family-names: Na
+    given-names: Liuyuan
+  - family-names: Jin
+    given-names: Jin
+  - family-names: Chen
+    given-names: Guangyan
+  - family-names: Yue
+    given-names: Yufeng
+  - family-names: Li
+    given-names: Gen
+  - family-names: Ding
+    given-names: Fangqiang
+version: 0.1.0
+date-released: 2026-09-18
+url: "https://rain-policy.github.io/"
+repository-code: "https://github.com/rain-policy/RAIN"
+keywords:
+  - robot manipulation
+  - imitation learning
+  - action chunking
+  - flow matching
+  - ManiSkill

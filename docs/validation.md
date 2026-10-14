@@ -1,5 +1,21 @@
 # Release validation — 2026-09-18
 
+## Repository maintenance — 2026-10-14
+
+The code/model repository was moved to `rain-policy/RAIN`. The original model
+archive, tensors and numeric route settings are unchanged. Its download
+manifest now points to the project organization.
+
+The old pinned simulator Git commit cannot currently be retrieved from upstream.
+The retained ManiSkill source used by the integration environment is now
+distributed as a separate hash-verified Release attachment; source archive
+identity is recorded in `manifests/simulator.json`. The source installer
+validates archive paths, layout and checksums before installation.
+
+The integration results below describe the September 18 checks. The October
+repository/documentation maintenance does not replace them with a new
+800-episode experiment or a full retraining run.
+
 ## Completed
 
 - All eight RAIN tasks completed one full episode each using the released source

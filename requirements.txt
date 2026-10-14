@@ -5,4 +5,4 @@ h5py==3.16.0
 scipy==1.15.3
 diffusers==0.35.2
 tensorboard==2.21.0
-mani_skill @ git+https://github.com/haosulab/ManiSkill.git@fb3328d3b4e29fad8753e2c26a713320be786fd8
+# Install the exact reference simulator with: python tools/install_simulator.py

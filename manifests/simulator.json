@@ -1,0 +1,11 @@
+{
+  "repository": "rain-policy/RAIN",
+  "tag": "v0.1.0",
+  "asset": "rain-maniskill-source-fb3328d.tar.gz",
+  "version": "3.0.1",
+  "reference_revision": "fb3328d3b4e29fad8753e2c26a713320be786fd8",
+  "bytes": 243603186,
+  "sha256": "75350b7cab59c60369a32910485c3d612f92339d5f09be8c67145da575af8e87",
+  "files": 1490,
+  "source": "Retained ManiSkill source used for the v0.1.0 integration checks"
+}

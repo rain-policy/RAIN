@@ -1,14 +1,54 @@
 # Installation and platform requirements
 
-Use the installation commands in the README. The pinned ManiSkill commit is
-`fb3328d3b4e29fad8753e2c26a713320be786fd8`. Do not silently upgrade it when checking
-model behavior. The release does not require a copied baseline source tree.
+## Install the reference environment
+
+Use Linux, Python 3.10 and an NVIDIA GPU. From an account with access to this
+private repository:
+
+```bash
+gh auth login
+gh repo clone rain-policy/RAIN
+cd RAIN
+python3.10 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+python -m pip install -r requirements.txt
+python tools/install_simulator.py
+```
+
+The simulator installer downloads the exact retained ManiSkill 3.0.1 source
+snapshot and verifies its archive hash and layout before installation. The
+recorded reference revision is `fb3328d3b4e29fad8753e2c26a713320be786fd8`; its
+old upstream Git URL is currently unavailable. The source archive avoids
+substituting a newer simulator for the version used by the released models.
+Its size and checksum are in [simulator.json](../manifests/simulator.json).
+
+To use an already downloaded simulator archive:
+
+```bash
+python tools/install_simulator.py --archive /path/to/rain-maniskill-source-fb3328d.tar.gz
+```
+
+Add `--verify-only` to check the source archive without installing it.
 
 The release was checked with Linux, Python 3.10.20, PyTorch 2.6.0+cu124,
 NumPy 2.2.6, Gymnasium 1.3.0, SAPIEN 3.0.3 and ManiSkill 3.0.1 at the pinned
 commit. Training utilities additionally use HDF5, SciPy, diffusers and TensorBoard.
-Dependency versions are pinned in `requirements.txt`; PyTorch is installed
-separately so that its CUDA wheel is explicit.
+Dependency versions are pinned in `requirements.txt`; PyTorch's CUDA wheel
+and the reference simulator are installed explicitly.
+
+## Check the environment
+
+```bash
+python -c "import torch, mani_skill, sapien; print(torch.__version__); print('CUDA:', torch.cuda.is_available())"
+python run.py --help
+```
+
+Then [install the models](models.md) and start a one-episode run. The recorded
+GPU integration checks used an isolated source checkout with inherited
+dependencies; a complete empty-machine CUDA installation has not yet been
+validated. See [validation](validation.md) for the exact checks.
 
 ## Vulkan on headless servers
 

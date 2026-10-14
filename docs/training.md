@@ -1,7 +1,8 @@
 # Training RAIN
 
-Pretrained evaluation does not need demonstration data. Retraining requires a
+Pretrained evaluation does not need demonstration data. Training requires a
 state-observation HDF5 demonstration file in the correct task/control mode.
+See the [data guide](data.md) for the schema, acquisition tools and split contract.
 The original experiment used 500 successful trajectories per task, with a fixed
 400/50/50 training/calibration/held-out split (split seed 31001). Keep the original
 trajectory IDs and preprocessing when seeking exact experiment reproduction.
@@ -32,7 +33,7 @@ Stages are `proposal`, `cache`, `refiner`, `joint`, `joint-cache`, `score`,
 pretrain the FM refiner for 25k, jointly train for 50k, then build the frozen-model
 features, fit the risk ensemble and calibrate its cost/transition parameters.
 The feature-builder head is a training intermediate; the deployed decision uses
-the pre-refinement risk ensemble. The `score` stage computes counterfactual
+the error ensemble before running the refiner. The `score` stage computes counterfactual
 training targets, not an independent comparison experiment.
 
 The calibration implementation retains the original offline H2/H8 sequence
