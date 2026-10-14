@@ -21,7 +21,9 @@ Adaptive Action Chunk Refinement for Robot Manipulation**.
 - Keep arXiv and paper BibTeX marked pending until the confirmed public reference
   is supplied. `CITATION.cff` describes the software release, not a paper venue.
 - Keep the repository private until the user explicitly requests public release.
-  The current `LICENSE` is a private research notice; public licensing is pending.
+  The user selected MIT for original RAIN code, documentation and all eight-task
+  v0.1.0 model weights on 2026-10-14. Preserve upstream dependency, simulator
+  asset and dataset terms; do not apply the RAIN license to those materials.
 - Do not add datasets, models, raw experiment logs, private paths or manuscript
   review IDs to Git. Keep internal audits under the local parent workspace's
   reports directory.

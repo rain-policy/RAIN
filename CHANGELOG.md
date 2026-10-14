@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Adopted the MIT License for original RAIN code, documentation and the
+  eight-task v0.1.0 model weights on 2026-10-14.
 - Organized the repository homepage and documentation around pretrained
   evaluation, data preparation, training and development.
 - Added project-page navigation and a pending arXiv reference slot.
@@ -20,4 +22,5 @@
   and numeric route settings.
 
 The v0.1.0 model artifact remains unchanged. The current release is private;
-public distribution and license selection are pending.
+public distribution is pending. Its original RAIN model weights use MIT,
+as selected on 2026-10-14.

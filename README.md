@@ -138,5 +138,7 @@ files and explains the module identifiers retained for checkpoint compatibility.
 ## Development and access
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for local checks and issue reports.
-The current code and model release are private; the public-use license is
-pending. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Original RAIN code, documentation and the eight-task v0.1.0 model weights use the
+[MIT License](LICENSE). The repository and model release currently remain
+private. Third-party software, simulator assets and demonstration datasets
+retain their [upstream terms](THIRD_PARTY_NOTICES.md).

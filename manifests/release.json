@@ -3,5 +3,7 @@
   "tag": "v0.1.0",
   "asset": "rain-models-v0.1.0.tar.gz",
   "bytes": 566963392,
-  "sha256": "0304986672ca52b43ca170316e36886b39126ac577f64af694fba8c9afe114ff"
+  "sha256": "0304986672ca52b43ca170316e36886b39126ac577f64af694fba8c9afe114ff",
+  "model_license": "MIT",
+  "model_license_asset": "RAIN-MODELS-LICENSE.txt"
 }

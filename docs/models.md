@@ -53,5 +53,14 @@ defined in [release.json](../manifests/release.json) and
 
 The exported tensors and numeric route settings match the original models;
 private path metadata was removed. See [validation](validation.md) for the
-export checks. The original-code and model licensing status is in
-[LICENSE](../LICENSE).
+export checks.
+
+## License
+
+The eight-task v0.1.0 RAIN model weights, including the proposal, refiner and
+error-ensemble checkpoints and associated route configuration, are released
+under the [MIT License](../LICENSE), as selected by the authors on 2026-10-14.
+The release remains private until public distribution is authorized.
+
+Simulator source, simulator assets and demonstration datasets retain their
+upstream terms; see [third-party notices](../THIRD_PARTY_NOTICES.md).

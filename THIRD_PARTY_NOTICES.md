@@ -15,6 +15,8 @@ their upstream license terms continue to apply.
 
 No upstream baseline implementation or full ManiSkill source tree is vendored
 in Git. The reference simulator is supplied as a separate, verified Release
-attachment, including its packaged simulation assets. Models and source are provided as a private research release;
-see `LICENSE` for current licensing status. Any future public distribution must
-retain applicable notices and complete the rights-holder license selection.
+attachment, including its packaged simulation assets. The MIT license in
+`LICENSE` covers original RAIN code, documentation and the eight-task v0.1.0
+model weights. It does not replace upstream software, simulator asset or
+demonstration dataset terms. The repository and Release assets currently
+remain private.
