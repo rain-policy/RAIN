@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-15 — publication links
+
+- Added the published arXiv:2610.19765 abstract and PDF links.
+- Added paper BibTeX and GitHub preferred-citation metadata.
+- Updated project resources and release descriptions; model archives are unchanged.
+
 ## v0.1.1 — 2026-10-14
 
 - Published the ManiSkill code, pretrained models and manuscript PDF.

@@ -25,5 +25,6 @@ training and calibration workflow. The project overview and videos are on the
 - [Contributing](../CONTRIBUTING.md): development setup and contribution workflow.
 - [Changelog](../CHANGELOG.md): release history.
 
-The official paper citation and arXiv link will appear in the
-[repository README](../README.md) when the public preprint is available.
+Read the paper at [arXiv:2610.19765](https://arxiv.org/abs/2610.19765). The
+[repository README](../README.md#project-and-citation) includes the paper citation;
+[CITATION.bib](../CITATION.bib) provides a reusable BibTeX entry.

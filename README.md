@@ -8,8 +8,8 @@ Guangyan Chen · Yufeng Yue · Gen Li · Fangqiang Ding
 
 <p align="center">
 <a href="https://rain-policy.github.io/">Project page</a> ·
-<a href="https://rain-policy.github.io/assets/paper/RAIN.pdf">Paper (PDF)</a> ·
-arXiv: awaiting announcement ·
+<a href="https://arxiv.org/pdf/2610.19765">Paper (PDF)</a> ·
+<a href="https://arxiv.org/abs/2610.19765">arXiv:2610.19765</a> ·
 <a href="https://github.com/rain-policy/RAIN/releases/tag/v0.1.0">Pretrained models</a> ·
 <a href="docs/README.md">Documentation</a>
 </p>
@@ -129,12 +129,21 @@ files and explains the module identifiers retained for checkpoint compatibility.
 ## Project and citation
 
 - **Project page:** [rain-policy.github.io](https://rain-policy.github.io/)
-- **Paper:** [Manuscript PDF](https://rain-policy.github.io/assets/paper/RAIN.pdf).
-- **arXiv:** submitted; the public preprint link and paper BibTeX will be added
-  after announcement.
-- **Software citation:** [CITATION.cff](CITATION.cff) records this repository's
-  confirmed authors and software release metadata.
-- **Updates:** [Changelog](CHANGELOG.md)
+- **Paper:** [arXiv:2610.19765](https://arxiv.org/abs/2610.19765) · [PDF](https://arxiv.org/pdf/2610.19765).
+- **Citation:** [CITATION.bib](CITATION.bib) provides BibTeX; [CITATION.cff](CITATION.cff)
+  supplies the paper as GitHub's preferred citation and retains the software metadata.
+
+```bibtex
+@misc{liu2026refineactionsneeded,
+  title={Refine Actions If Needed: Adaptive Action Chunk Refinement for Robot Manipulation},
+  author={Hanlin Liu and Zichen Zhou and Jiacheng Zhang and Liuyuan Na and Jin Jin and Guangyan Chen and Yufeng Yue and Gen Li and Fangqiang Ding},
+  year={2026},
+  eprint={2610.19765},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2610.19765}
+}
+```
 
 ## Development and license
 

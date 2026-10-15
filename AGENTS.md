@@ -18,8 +18,10 @@ Adaptive Action Chunk Refinement for Robot Manipulation**.
   is a separate archive described by `manifests/simulator.json`.
 - Use `run.py`, `train.py` and the installation/download tools as user-facing
   entry points. Keep docs aligned with their actual options and outputs.
-- Keep arXiv and paper BibTeX marked pending until the confirmed public reference
-  is supplied. `CITATION.cff` describes the software release, not a paper venue.
+- The published preprint is https://arxiv.org/abs/2610.19765 (v1, 2026-10-14).
+  Keep paper links and BibTeX aligned with that record. `CITATION.cff` retains
+  software metadata and uses the paper as its preferred citation. The paper
+  remains under conference review; arXiv publication is not conference acceptance.
 - The user explicitly authorized public code, model and manuscript PDF release
   on 2026-10-14. Keep release links aligned with public availability.
   The user selected MIT for original RAIN code, documentation and all eight-task
